@@ -1,0 +1,12 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Supplier Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="SupplierName" placeholder="Enter Supplier Name">
+    </div>
+</div>
+<button (click)="addSupplier()" *ngIf="sup.SupplierId==0" class="btn btn-primary">
+    Add
+</button>
+<button (click)="updateSupplier()" *ngIf="sup.SupplierId!=0" class="btn btn-primary">
+    Update
+</button>

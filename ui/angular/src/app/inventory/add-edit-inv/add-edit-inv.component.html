@@ -1,0 +1,22 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">
+        <p style="color:rgb(10, 6, 0)"> Inventory Name
+        <p>
+    </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="InventoryName" placeholder="Enter Inventory Name">
+    </div>
+    <label class="col-sm-2 col-form-label">
+        <p style="color:rgb(8, 5, 0)"> Stock Quantity
+        <p>
+    </label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="StockQuantity" placeholder="Enter Stock Quantity">
+    </div>
+</div>
+<button (click)="addInventory()" *ngIf="inv.InventoryId==0" class="btn btn-primary">
+    Add
+</button>
+<button (click)="updateInventory()" *ngIf="inv.InventoryId!=0" class="btn btn-primary">
+    Update
+</button>

@@ -1,0 +1,29 @@
+.cc{
+    background-image:url("https://planful.com/wp-content/uploads/customers.jpg");    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+td {
+    text-align: center;
+  }
+th {
+    text-align: center;
+  }
+.t{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+.transparentbox {
+    opacity: 0.6;
+    margin: 30px;
+    border: 1px solid black;
+    background-color: #ddddf1;
+    filter: alpha(opacity=60); 
+    height: 70px;
+    
+ }
